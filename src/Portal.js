@@ -49,6 +49,7 @@ let Portal = React.createClass({
   _mountOverlayTarget() {
     if (!this._overlayTarget) {
       this._overlayTarget = document.createElement('div');
+      this._overlayTarget.className = 'hiqBootstrap';
       this._portalContainerNode = getContainer(this.props.container, ownerDocument(this).body);
       this._portalContainerNode.appendChild(this._overlayTarget);
     }
